@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+  src: url("/fonts/OpenRunde-Semibold.woff2") format("woff2");
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.animate-spin {
+  animation: spin infinite 0.3s linear;
+}
+
+.will-transform {
+  will-change: transform !important;
+}
